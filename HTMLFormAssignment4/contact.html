@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/syle.css">
+    <title>Contact for Marlen's Books</title>
+</head>
+<body>
+    <section class="contact-form-container z-depth-5">
+        <div class="contact-form-header">
+            <h1>Contact Marlena's Books</h1>
+        </div>
+        <form class="contact-form">
+            <div class="input-field">
+                <label for="Name">Name</label><br>
+                <input type="text" id="input_text" placeholder="Name" required>
+            </div><br>
+            <div class="input-field">
+                <label for="Email">Email</label><br>
+                <input type="email" id="input_text" data-length="50" placeholder="Email" required>
+            </div><br>
+            <div class="input-field">
+                <label for="Phone">Phone</label><br>
+                <input type="tel" id="phone"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" data-length="50" placeholder="Phone number" required>
+            </div><br>
+            <div class="input-field">
+                <label for="name">Reason for Contact/Message</label><br>
+                <textarea id="textarea2" class="materialize-textarea" data-length="200" placeholder="Message" required></textarea>
+                
+            </div><br>
+            <div class="input-field">
+                <label for="Issue Type">Significance of Issue</label><br>
+                <select name="Priority" required>
+                    <option value="">Pick an Option </option>
+                    <option value="Critical">Critical</option>
+                    <option value="Normal Processing">Normal</option>
+                    <option value="I can wait a few weeks :)">No Impact</option>
+                </select>
+            </div><br>
+            <div class="button">
+                <input class="ccbtn" type="submit" value="Submit">
+            </div>
+         </form>  
+</body>
+</html>
